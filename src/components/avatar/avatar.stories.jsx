@@ -13,7 +13,49 @@ export function Basic() {
         <Avatar
             src="http://storybook.bfmio.com/static/media/chungus.c2e5cc0f.jpg"
             alt="Big Chungus"
-            fallback="BC"
+            bg="green"
+            size={340}
+            circle={true}
         />
+    );
+}
+
+export function BasicFallback() {
+    return <Avatar src="" alt="" bg="orange" size={340} circle={false} />;
+}
+
+export function Group() {
+    return (
+        <Avatar.Group>
+            <Avatar
+                src="http://storybook.bfmio.com/static/media/chungus.c2e5cc0f.jpg"
+                alt="Big Chungus"
+                bg="green"
+                size={340}
+                circle={true}
+            />
+            <Avatar
+                src="http://storybook.bfmio.com/static/media/chungus.c2e5cc0f.jpg"
+                alt="Big Chungus"
+                bg="green"
+                size={340}
+                circle={true}
+            />
+
+            <Avatar
+                src="http://storybook.bfmio.com/static/media/chungus.c2e5cc0f.jpg"
+                alt="Big Chungus"
+                bg="green"
+                size={340}
+                circle={true}
+            />
+            <Avatar
+                src="http://storybook.bfmio.com/static/media/chungus.c2e5cc0f.jpg"
+                alt="Big Chungus"
+                bg="green"
+                size={340}
+                circle={true}
+            />
+        </Avatar.Group>
     );
 }
